@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using QuizMaster.Models;
 
 namespace QuizMaster.Data
 {
@@ -12,5 +13,6 @@ namespace QuizMaster.Data
             : base(options)
         {
         }
+        public DbSet<QuizMaster.Models.RoleViewModel> RoleViewModel { get; set; }
     }
 }
